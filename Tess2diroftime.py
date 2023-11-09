@@ -41,7 +41,7 @@ def draw_cube():
 
 def main():
     pygame.init()
-    display = (800, 600)
+    display = (1920, 1080)
     pygame.display.set_mode(display, DOUBLEBUF | OPENGL)
     
     gluPerspective(150, (display[0] / display[1]), 0.1, 50.0)
