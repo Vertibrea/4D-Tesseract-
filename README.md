@@ -11,3 +11,6 @@ German:
 
 French:
 "Animation de tessellation dans l'espace libre, pour des projets futurs en physique quantique. Cette animation explore les simulations de particules multiples, offrant un regard approfondi sur les interactions quantiques dans un espace tridimensionnel. La tessellation, en divisant l'espace, permet de modéliser des phénomènes complexes et d'ouvrir de nouvelles perspectives pour la compréhension des principes fondamentaux de la physique quantique.
+
+Preview:
+https://www.youtube.com/watch?v=wG3s-hwQF5U
