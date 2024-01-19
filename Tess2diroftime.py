@@ -65,12 +65,12 @@ def main():
 
         glPushMatrix() 
         glTranslatef(-.5,-.5,-.5)
-        glRotatef(pygame.time.get_ticks() * 4, -0.5, -0.5, -0.5)  # Rotate the third cube (increased speed)
+        glRotatef(pygame.time.get_ticks() * 4, -0.5, -0.5, -0.5) 
         draw_cube() 
         glPopMatrix() 
 
         
-        glPushMatrix()  # Save the transformation state for the fourth cube
+        glPushMatrix()  
         glTranslatef(-.5,-.5,-.5)
         glRotatef(-pygame.time.get_ticks() * 0.02, 0.5, 0.5, 0.5)  # Rotate the fourth cube in the opposite direction (increased speed)
         draw_cube()
@@ -78,11 +78,11 @@ def main():
         #2nd
 
         glPushMatrix() 
-        glScalef(2,2,2) # Save the transformation state for the first cube
+        glScalef(2,2,2) 
         glRotatef(pygame.time.get_ticks() * 0.2, 0.5, 0.5, 0.5)  # Rotate the first cube (increased speed)
         glTranslatef(-.5,-.5,-.5)
         draw_cube()
-        glPopMatrix()  # Restore the transformation state for the first cube
+        glPopMatrix()  
 
 
         glPushMatrix() 
@@ -93,17 +93,17 @@ def main():
         glPopMatrix() 
 
         
-        glPushMatrix()  # Save the transformation state for the fourth cube
+        glPushMatrix()  
         glScalef(2,2,2)
         glTranslatef(-.5,-.5,-.5)
         glRotatef(-pygame.time.get_ticks() * 0.02, 0.5, 0.5, 0.5)  # Rotate the fourth cube in the opposite direction (increased speed)
         draw_cube()
-        glPopMatrix()  # Restore the transformation state for the fourth cube
+        glPopMatrix()  
 
         #2nd opposite spin 
         glPushMatrix() 
         glScalef(2,2,2) # Save the transformation state for the first cube
-        glRotatef(pygame.time.get_ticks() * 0.2, -0.5, -0.5, -0.5)  # Rotate the first cube (increased speed)
+        glRotatef(pygame.time.get_ticks() * 0.2, -0.5, -0.5, -0.5)  
         glTranslatef(-.5,-.5,-.5)
         draw_cube()
         glPopMatrix()  # Restore the transformation state for the first cube
@@ -120,9 +120,9 @@ def main():
         glPushMatrix()  # Save the transformation state for the fourth cube
         glScalef(2,2,2)
         glTranslatef(-.5,-.5,-.5)
-        glRotatef(-pygame.time.get_ticks() * 0.02, -0.5, -0.5, -0.5)  # Rotate the fourth cube in the opposite direction (increased speed)
+        glRotatef(-pygame.time.get_ticks() * 0.02, -0.5, -0.5, -0.5)  
         draw_cube()
-        glPopMatrix()  # Restore the transformation state for the fourth cube
+        glPopMatrix()  
 
         for i in range(10):
             factor_1 = 2 * i
@@ -133,7 +133,7 @@ def main():
             glTranslatef(translate_f, translate_f, translate_f)
             glRotatef(-pygame.time.get_ticks() * 0.02, 0.5, 0.5, 0.5)  # Rotate the fifth cube in the opposite direction (increased speed)
             draw_cube()
-            glPopMatrix()  # Restore the transformation state for the fifth cube
+            glPopMatrix() 
             
         for i in range(10):
             factor_1 = -2 * i
@@ -142,7 +142,7 @@ def main():
             glPushMatrix()  # Save the transformation state for the fifth cube
             glScalef(scale_f, scale_f, 0)
             glTranslatef(translate_f, translate_f, translate_f)
-            glRotatef(-pygame.time.get_ticks() * 0.02, 0.5, 0.5, 0.5)  # Rotate the fifth cube in the opposite direction (increased speed)
+            glRotatef(-pygame.time.get_ticks() * 0.02, 0.5, 0.5, 0.5)  
             draw_cube()
             glPopMatrix()  # Restore the transformation state for the fifth cube
 
